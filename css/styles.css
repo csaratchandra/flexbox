@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: rgb(214, 218, 214);
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    /*align-items: center; */
+    /*justify-content: center;*/
+}
+.box {
+    width: 70%;
+    height: 200px;
+    background: #FFF;
+}
+[class*="col-"] {
+	flex: 0 0 92%;
+    
+    /* outside the box */
+    margin-left: 4%;
+    margin-top: 4%;
+    margin-right: 4%;
+    
+    /* inside the box */
+    padding-left: 30%;
+    padding-top: 25%;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+    [class*='col-']{
+        margin-left: 4%;
+        margin-right: 0%;
+        padding-top: 9%;
+	}
+	.col-1-4 {
+        flex: 0 0 44%;
+        padding-left: 18%;
+        
+	}
+    .col-1,
+    .col-1-2,
+	.col-1-3{
+        flex: 0 0 92%;
+        padding-left: 40%;
+	}
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 1024.1px) {
+    [class*='col-']{
+        margin-left: 4%;
+        margin-right: 0%;
+        padding-top: 6%;
+	}
+    .col-1-4 {
+        flex: 0 0 20%;
+        padding-left: 6%;
+	}
+	.col-1-2 {
+        flex: 0 0 44%;
+        padding-left: 18%;
+	}
+	.col-1-3 {
+        flex: 0 0 68%;
+        padding-left: 29%;
+	}
+	.col-1 {
+        flex: 0 0 92%;
+        padding-left: 42%;
+	}
+} 
