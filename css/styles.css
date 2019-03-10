@@ -11,6 +11,8 @@ body {
     /*justify-content: center;*/
 }
 .box {
+    /*border: solid green 2px; */ /* this draws a solid green line as the border */
+    border-radius: 0.5em; /* gives the corner of the box a slight curve. */
     width: 70%;
     height: 200px;
     background: #FFF;
@@ -20,7 +22,7 @@ body {
     
     /* outside the box */
     margin-left: 4%;
-    margin-top: 4%;
+    margin-top: 2.5%;
     margin-right: 4%;
     
     /* inside the box */
